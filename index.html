@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/favicon.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -31,11 +31,11 @@
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav-right">
-      <a class="nav-phone" href="tel:01162520500" aria-label="Call us on 0116 252 0500">
+      <a class="nav-phone" href="tel:01162520500">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.61 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16.18v-.26z"/></svg>
         0116 252 0500
       </a>
-      <a class="btn" href="contact.html">Get in touch</a>
+      <a class="btn btn--glow" href="contact.html">Get in touch</a>
     </div>
     <button class="nav-burger" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">
       <span></span><span></span><span></span>
@@ -60,16 +60,20 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--3" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-inner">
-        <span class="label">Leicester's Managed IT Partner</span>
-        <h1>IT that works,<br><span class="hero-accent">every single day.</span></h1>
-        <p class="hero-sub">Sempervox has supported East Midlands businesses for over 20 years. Proactive managed IT — one partner, full stack, zero gaps.</p>
-        <div class="hero-actions">
-          <a class="btn btn--lg" href="contact.html">Talk to us</a>
+        <span class="label fade-up">Leicester's Managed IT Partner</span>
+        <h1 class="fade-up" style="--delay:.1s">IT that works,<br><span class="hero-accent">every single day.</span></h1>
+        <p class="hero-sub fade-up" style="--delay:.2s">Sempervox has supported East Midlands businesses for over 20 years. Proactive managed IT — one partner, full stack, zero gaps.</p>
+        <div class="hero-actions fade-up" style="--delay:.3s">
+          <a class="btn btn--lg btn--glow" href="contact.html">Talk to us</a>
           <a class="btn btn--outline-white btn--lg" href="services.html">Our services</a>
         </div>
+        <div class="hero-scroll" aria-hidden="true"><span></span></div>
       </div>
     </div>
     <div class="trust-strip">
@@ -99,13 +103,13 @@
     <div class="container">
       <div class="intro-split">
         <div class="intro-left">
-          <span class="label">The challenge</span>
-          <h2 class="section-title">Most businesses treat IT as a cost. We treat it as a competitive advantage.</h2>
-          <p class="intro-body">When IT is reactive — waiting for things to break before fixing them — it costs you in downtime, lost productivity, and frustrated staff. Sempervox takes ownership of your technology so you never have to.</p>
-          <a class="btn" href="about.html">About Sempervox</a>
+          <span class="label fade-up">The challenge</span>
+          <h2 class="section-title fade-up" style="--delay:.1s">Most businesses treat IT as a cost. We treat it as a competitive advantage.</h2>
+          <p class="intro-body fade-up" style="--delay:.2s">When IT is reactive — waiting for things to break before fixing them — it costs you in downtime, lost productivity, and frustrated staff. Sempervox takes ownership of your technology so you never have to.</p>
+          <a class="btn fade-up" style="--delay:.3s" href="about.html">About Sempervox</a>
         </div>
         <div class="intro-right">
-          <div class="problem-item">
+          <div class="problem-item fade-up" style="--delay:.1s">
             <div class="problem-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
             </div>
@@ -114,7 +118,7 @@
               <p>Systems fail at the worst possible moment — costing revenue and reputation.</p>
             </div>
           </div>
-          <div class="problem-item">
+          <div class="problem-item fade-up" style="--delay:.2s">
             <div class="problem-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
             </div>
@@ -123,7 +127,7 @@
               <p>Cyber threats evolve constantly. Most breaches exploit basic control failures.</p>
             </div>
           </div>
-          <div class="problem-item">
+          <div class="problem-item fade-up" style="--delay:.3s">
             <div class="problem-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
@@ -132,7 +136,7 @@
               <p>When something breaks, everyone points at someone else.</p>
             </div>
           </div>
-          <div class="problem-item">
+          <div class="problem-item fade-up" style="--delay:.4s">
             <div class="problem-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
             </div>
@@ -149,71 +153,52 @@
   <!-- SERVICES -->
   <section class="section">
     <div class="container">
-      <span class="label">What we do</span>
-      <h2 class="section-title">Six service areas. One managed IT partner.</h2>
-      <p class="section-lead">We don't do one thing well and bolt on the rest. Each area is core to what we deliver — backed by the right technology partnerships and experienced people.</p>
+      <span class="label fade-up">What we do</span>
+      <h2 class="section-title fade-up" style="--delay:.1s">Six service areas. One managed IT partner.</h2>
+      <p class="section-lead fade-up" style="--delay:.2s">We don't do one thing well and bolt on the rest. Each area is core to what we deliver — backed by the right technology partnerships and experienced people.</p>
       <div class="services-v2-grid">
-
-        <div class="service-v2-card">
+        <div class="service-v2-card fade-up" style="--delay:.05s">
           <span class="service-v2-num">01</span>
-          <div class="service-v2-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          </div>
+          <div class="service-v2-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
           <h3>Digital Transformation</h3>
           <p>Microsoft 365, Azure, and cloud migration — technology that reduces overhead and scales with your business.</p>
           <a class="svc-v2-link" href="services.html">Learn more →</a>
         </div>
-
-        <div class="service-v2-card">
+        <div class="service-v2-card fade-up" style="--delay:.1s">
           <span class="service-v2-num">02</span>
-          <div class="service-v2-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
+          <div class="service-v2-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
           <h3>Security</h3>
           <p>Fortinet firewalls, Cyber Essentials certification, endpoint protection and staff security awareness training.</p>
           <a class="svc-v2-link" href="services.html">Learn more →</a>
         </div>
-
-        <div class="service-v2-card">
+        <div class="service-v2-card fade-up" style="--delay:.15s">
           <span class="service-v2-num">03</span>
-          <div class="service-v2-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-          </div>
+          <div class="service-v2-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
           <h3>Networks</h3>
           <p>Ubiquiti wireless, DrayTek routing, structured cabling and VPN — engineered for reliability, not just price.</p>
           <a class="svc-v2-link" href="services.html">Learn more →</a>
         </div>
-
-        <div class="service-v2-card">
+        <div class="service-v2-card fade-up" style="--delay:.2s">
           <span class="service-v2-num">04</span>
-          <div class="service-v2-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-          </div>
+          <div class="service-v2-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
           <h3>Mobility</h3>
           <p>MDM policies, BYOD governance, mobile airtime and secure remote access — fully managed end to end.</p>
           <a class="svc-v2-link" href="services.html">Learn more →</a>
         </div>
-
-        <div class="service-v2-card">
+        <div class="service-v2-card fade-up" style="--delay:.25s">
           <span class="service-v2-num">05</span>
-          <div class="service-v2-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.61 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16.18v-.26z"/></svg>
-          </div>
+          <div class="service-v2-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.61 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16.18v-.26z"/></svg></div>
           <h3>Unified Communications</h3>
           <p>Microsoft Teams Voice, hosted telephony via Gamma, auto-attendants and number management.</p>
           <a class="svc-v2-link" href="services.html">Learn more →</a>
         </div>
-
-        <div class="service-v2-card">
+        <div class="service-v2-card fade-up" style="--delay:.3s">
           <span class="service-v2-num">06</span>
-          <div class="service-v2-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6l5.5 5.5L12 6l5.5 5.5L23 6"/><path d="M1 18l5.5-5.5L12 18l5.5-5.5L23 18"/></svg>
-          </div>
+          <div class="service-v2-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6l5.5 5.5L12 6l5.5 5.5L23 6"/><path d="M1 18l5.5-5.5L12 18l5.5-5.5L23 18"/></svg></div>
           <h3>Resilient Connectivity</h3>
           <p>Leased lines, dual-ISP failover and 4G/5G backup — so a single line failure never stops your business.</p>
           <a class="svc-v2-link" href="services.html">Learn more →</a>
         </div>
-
       </div>
     </div>
   </section>
@@ -221,23 +206,23 @@
   <!-- HOW WE WORK -->
   <section class="section section--alt">
     <div class="container">
-      <span class="label">Our approach</span>
-      <h2 class="section-title">How we work.</h2>
-      <p class="section-lead">We follow a consistent three-stage process with every client — whether you're a new business or switching from another provider.</p>
+      <span class="label fade-up">Our approach</span>
+      <h2 class="section-title fade-up" style="--delay:.1s">How we work.</h2>
+      <p class="section-lead fade-up" style="--delay:.2s">We follow a consistent three-stage process with every client — whether you're a new business or switching from another provider.</p>
       <div class="process-grid">
-        <div class="process-step">
+        <div class="process-step fade-up" style="--delay:.1s">
           <div class="process-num">01</div>
           <h3>Listen &amp; assess</h3>
           <p>We start by understanding your business — what you do, how you work, where the friction is, and where you want to go. No assumptions, no generic solutions.</p>
         </div>
         <div class="process-connector" aria-hidden="true"></div>
-        <div class="process-step">
+        <div class="process-step fade-up" style="--delay:.25s">
           <div class="process-num">02</div>
           <h3>Plan &amp; implement</h3>
           <p>We design the right technology for your situation and deliver it cleanly — with clear timelines, proper documentation, and minimal disruption to your team.</p>
         </div>
         <div class="process-connector" aria-hidden="true"></div>
-        <div class="process-step">
+        <div class="process-step fade-up" style="--delay:.4s">
           <div class="process-num">03</div>
           <h3>Manage &amp; support</h3>
           <p>We take ongoing responsibility for your IT. Proactive monitoring, regular reviews, and a team who knows your setup and picks up the phone when you call.</p>
@@ -250,19 +235,19 @@
   <section class="stats-band">
     <div class="container">
       <div class="stats-v2">
-        <div class="stat-v2">
-          <div class="stat-v2-num">20+</div>
+        <div class="stat-v2 fade-up" style="--delay:.05s">
+          <div class="stat-v2-num" data-count="20" data-suffix="+">0+</div>
           <div class="stat-v2-label">Years supporting East Midlands businesses</div>
         </div>
-        <div class="stat-v2">
-          <div class="stat-v2-num">6</div>
+        <div class="stat-v2 fade-up" style="--delay:.15s">
+          <div class="stat-v2-num" data-count="6">0</div>
           <div class="stat-v2-label">Core service areas — full IT stack, one partner</div>
         </div>
-        <div class="stat-v2">
-          <div class="stat-v2-num">10+</div>
+        <div class="stat-v2 fade-up" style="--delay:.25s">
+          <div class="stat-v2-num" data-count="10" data-suffix="+">0+</div>
           <div class="stat-v2-label">Technology partnerships and accreditations</div>
         </div>
-        <div class="stat-v2">
+        <div class="stat-v2 fade-up" style="--delay:.35s">
           <div class="stat-v2-num">LE1</div>
           <div class="stat-v2-label">Leicester city centre — local and accessible</div>
         </div>
@@ -273,8 +258,8 @@
   <!-- TESTIMONIAL -->
   <section class="section">
     <div class="container">
-      <span class="label">Client stories</span>
-      <div class="featured-testimonial">
+      <span class="label fade-up">Client stories</span>
+      <div class="featured-testimonial fade-up" style="--delay:.15s">
         <blockquote class="featured-quote">
           "We have worked with Sempervox for over 12 years and they have been key in helping us to safely grow our business. Sempervox have understood how we work and the regulations surrounding our industry, to recommend and deliver quality telecoms and IT services. We regard the people at Sempervox as a key part of our team."
         </blockquote>
@@ -295,8 +280,8 @@
   <!-- PARTNERS -->
   <section class="section section--alt">
     <div class="container">
-      <p class="partners-title">Technology partnerships &amp; accreditations</p>
-      <div class="partners-row">
+      <p class="partners-title fade-up">Technology partnerships &amp; accreditations</p>
+      <div class="partners-row fade-up" style="--delay:.1s">
         <span class="partner-badge">Fortinet</span>
         <span class="partner-badge">Microsoft Silver Partner</span>
         <span class="partner-badge">Veeam</span>
@@ -313,8 +298,10 @@
 
   <!-- CTA -->
   <section class="cta-gradient-section">
+    <div class="cta-orb cta-orb--1" aria-hidden="true"></div>
+    <div class="cta-orb cta-orb--2" aria-hidden="true"></div>
     <div class="container">
-      <div class="cta-v2">
+      <div class="cta-v2 fade-up">
         <h2>Ready to talk about your IT?</h2>
         <p>Call us, email us, or fill in the contact form — we'll come back to you the same working day.</p>
         <div class="cta-v2-actions">
@@ -327,7 +314,6 @@
 
 </main>
 
-<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
