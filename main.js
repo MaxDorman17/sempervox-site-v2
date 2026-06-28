@@ -1,5 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  // ── Cookie banner ───────────────────────────────────────
+  var cookieBanner = document.getElementById("cookieBanner");
+  var cookieAccept = document.getElementById("cookieAccept");
+  var cookieDecline = document.getElementById("cookieDecline");
+  if (cookieBanner) {
+    if (localStorage.getItem("cookieChoice")) {
+      cookieBanner.classList.add("hidden");
+    }
+    if (cookieAccept) {
+      cookieAccept.addEventListener("click", function() {
+        localStorage.setItem("cookieChoice", "accepted");
+        cookieBanner.classList.add("hidden");
+      });
+    }
+    if (cookieDecline) {
+      cookieDecline.addEventListener("click", function() {
+        localStorage.setItem("cookieChoice", "declined");
+        cookieBanner.classList.add("hidden");
+      });
+    }
+  }
+
   // ── Cycling typewriter ───────────────────────────────────
   var twEl = document.getElementById("typewriter");
   if (twEl) {
@@ -73,6 +95,40 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  // ── Home testimonial carousel ────────────────────────────
+  (function() {
+    var track = document.getElementById("testimonialTrack");
+    var dotsEl = document.getElementById("testimonialDots");
+    var prevBtn = document.getElementById("testimonialPrev");
+    var nextBtn = document.getElementById("testimonialNext");
+    if (!track || !dotsEl) return;
+    var slides = Array.prototype.slice.call(track.querySelectorAll(".about-testimonial"));
+    var current = 0;
+    var dots = [];
+
+    slides.forEach(function(_, i) {
+      var d = document.createElement("button");
+      d.className = "carousel-dot" + (i === 0 ? " active" : "");
+      d.setAttribute("aria-label", "Testimonial " + (i + 1));
+      d.addEventListener("click", function() { goTo(i); });
+      dotsEl.appendChild(d);
+      dots.push(d);
+    });
+
+    function goTo(n) {
+      slides[current].classList.remove("active");
+      dots[current].classList.remove("active");
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add("active");
+      dots[current].classList.add("active");
+    }
+
+    slides[0].classList.add("active");
+    if (prevBtn) prevBtn.addEventListener("click", function() { goTo(current - 1); });
+    if (nextBtn) nextBtn.addEventListener("click", function() { goTo(current + 1); });
+    setInterval(function() { goTo(current + 1); }, 6000);
+  })();
 
   // ── Canvas particle network ──────────────────────────────
   var canvas = document.getElementById("particlesCanvas");
