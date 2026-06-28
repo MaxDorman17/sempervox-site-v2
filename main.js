@@ -1,5 +1,54 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  // ── Cycling typewriter ───────────────────────────────────
+  var twEl = document.getElementById("typewriter");
+  if (twEl) {
+    var phrases = [
+      "every single day.",
+      "quietly in the background.",
+      "without the headaches.",
+      "keeping you moving.",
+      "day in, day out.",
+      "you can rely on."
+    ];
+    var pi = 0, ci = 0, deleting = false, pauseTimer = null;
+
+    function tick() {
+      var phrase = phrases[pi];
+      if (!deleting) {
+        ci++;
+        twEl.textContent = phrase.slice(0, ci);
+        if (ci === phrase.length) {
+          deleting = true;
+          pauseTimer = setTimeout(tick, 2200);
+          return;
+        }
+        setTimeout(tick, 65);
+      } else {
+        ci--;
+        twEl.textContent = phrase.slice(0, ci);
+        if (ci === 0) {
+          deleting = false;
+          pi = (pi + 1) % phrases.length;
+          setTimeout(tick, 400);
+          return;
+        }
+        setTimeout(tick, 35);
+      }
+    }
+    setTimeout(tick, 800);
+  }
+
+  // ── Transparent nav on scroll ────────────────────────────
+  var header = document.querySelector(".site-header");
+  if (header) {
+    var onScroll = function() {
+      header.classList.toggle("scrolled", window.scrollY > 20);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
   // ── Mobile nav toggle ────────────────────────────────────
   var burger = document.querySelector(".nav-burger");
   var mobileNav = document.getElementById("mobile-nav");
@@ -23,26 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileNav.setAttribute("aria-hidden", "true");
       }
     });
-  }
-
-  // ── Typewriter effect ────────────────────────────────────
-  var typeEl = document.getElementById("typewriter");
-  var cursorEl = document.querySelector(".typing-cursor");
-  if (typeEl) {
-    var text = "every single day.";
-    var i = 0;
-    setTimeout(function () {
-      var interval = setInterval(function () {
-        if (i < text.length) {
-          typeEl.textContent += text[i];
-          i++;
-        } else {
-          clearInterval(interval);
-          // keep cursor blinking for 3s then hide it
-          if (cursorEl) setTimeout(function () { cursorEl.style.display = "none"; }, 3000);
-        }
-      }, 75);
-    }, 700);
   }
 
   // ── Canvas particle network ──────────────────────────────

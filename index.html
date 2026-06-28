@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style.css?v=5"/>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -27,8 +27,8 @@
       <a href="index.html" aria-current="page">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="support.html">Support</a>
-      <a href="contact.html">Contact</a>
+      <a href="documents.html">Documents</a>
+      <a href="https://sempsupport.powerappsportals.com/SignIn?ReturnUrl=%2F" target="_blank" rel="noopener" class="nav-support">Support</a>
     </nav>
     <div class="nav-right">
       <a class="nav-phone" href="tel:01162520500">
@@ -46,8 +46,8 @@
       <a href="index.html" aria-current="page">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="support.html">Support</a>
-      <a href="contact.html">Contact</a>
+      <a href="documents.html">Documents</a>
+      <a href="https://sempsupport.powerappsportals.com/SignIn?ReturnUrl=%2F" target="_blank" rel="noopener" class="nav-support">Support</a>
     </nav>
     <div class="mobile-nav-actions">
       <a class="btn btn--outline-white" href="tel:01162520500">0116 252 0500</a>
@@ -77,9 +77,8 @@
 
     <div class="container">
       <div class="hero-inner">
-        <span class="label hero-anim-1">Leicester's Managed IT Partner</span>
         <h1 class="hero-anim-2">IT that works,<br>
-          <span class="hero-accent"><span id="typewriter"></span><span class="typing-cursor" aria-hidden="true">|</span></span>
+          <span class="hero-accent"><span id="typewriter"></span><span class="typing-cursor" aria-hidden="true"></span></span>
         </h1>
         <p class="hero-sub hero-anim-3">Sempervox has supported East Midlands businesses for over 20 years. Proactive managed IT — one partner, full stack, zero gaps.</p>
         <div class="hero-actions hero-anim-4">
@@ -95,17 +94,30 @@
         <div class="trust-strip-inner">
           <span class="trust-strip-label">Trusted partnerships</span>
           <div class="trust-strip-logos">
-            <span>Fortinet</span>
-            <span class="trust-sep" aria-hidden="true">·</span>
-            <span>Microsoft Silver</span>
-            <span class="trust-sep" aria-hidden="true">·</span>
-            <span>Cyber Essentials</span>
-            <span class="trust-sep" aria-hidden="true">·</span>
-            <span>Veeam</span>
-            <span class="trust-sep" aria-hidden="true">·</span>
-            <span>Gamma</span>
-            <span class="trust-sep" aria-hidden="true">·</span>
-            <span>Ubiquiti</span>
+            <div class="trust-badge">
+              <img src="assets/fortinet.png" alt="Fortinet" loading="lazy"/>
+              <span>Fortinet</span>
+            </div>
+            <div class="trust-badge">
+              <img src="assets/microsoft.png" alt="Microsoft" loading="lazy"/>
+              <span>Microsoft Silver</span>
+            </div>
+            <div class="trust-badge">
+              <img src="assets/CyberEssentials.png" alt="Cyber Essentials" loading="lazy"/>
+              <span>Cyber Essentials</span>
+            </div>
+            <div class="trust-badge">
+              <img src="assets/Veeam.png" alt="Veeam" loading="lazy"/>
+              <span>Veeam</span>
+            </div>
+            <div class="trust-badge">
+              <img src="assets/draytek.png" alt="Draytek" loading="lazy"/>
+              <span>Draytek</span>
+            </div>
+            <div class="trust-badge">
+              <img src="assets/ubiquitinetworks.png" alt="Ubiquiti" loading="lazy"/>
+              <span>Ubiquiti</span>
+            </div>
           </div>
         </div>
       </div>
@@ -328,10 +340,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-logo">
-          <span class="footer-logo-mark" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </span>
-          Sempervox
+          <img src="assets/logo.png" alt="Sempervox" class="footer-logo-img"/>
         </div>
         <p class="footer-tagline">Managed IT services for businesses across the East Midlands. Trading as Signum Corporate Communications.</p>
       </div>
@@ -350,7 +359,7 @@
         <h4>Company</h4>
         <ul>
           <li><a href="about.html">About</a></li>
-          <li><a href="support.html">Support</a></li>
+          <li><a href="https://sempsupport.powerappsportals.com/SignIn?ReturnUrl=%2F" target="_blank" rel="noopener" class="nav-support">Support</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -370,6 +379,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js?v=2"></script>
 </body>
 </html>
